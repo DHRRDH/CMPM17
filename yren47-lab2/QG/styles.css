@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column; 
+}
+
+.quarterly-goals {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    color: #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border: 2px solid #8AB6D6; 
+}
+
+
+.quarterly-goals .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quarterly-goals h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.quarterly-goals h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.goal {
+    margin-bottom: 20px;
+}
+
+.goal p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.tag {
+    font-style: italic;
+    color: #000000;
+    margin: 0;
+}
+
+#algos { color: #ffa500; }
+#internships { color: #3cb371; }
+#interview { color: #ff8c00; }
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+}
+
+button.add-goal-button {
+    background-color: #26a69a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .quarterly-goals {
+        width: 90%;
+        padding: 15px;
+    }
+    .quarterly-goals h1 {
+        font-size: 1.8rem;
+    }
+    .quarterly-goals h2 {
+        font-size: 1.3rem;
+    }
+    .goal p {
+        font-size: 0.9rem;
+    }
+    button.add-goal-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+    .quarterly-goals {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quarterly-goals .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .goal p {
+        font-size: 0.8rem;
+    }
+    button.add-goal-button {
+        font-size: 0.8rem;
+    }
+}
